@@ -14,9 +14,9 @@ body {
 /* Slider Container */
 .custom-slider {
   appearance: none;
-  width: 500px;
+  width: 620px;
   height: 12px;
-  background: #ddd;
+  background: linear-gradient(90deg, #5F5F5F 0%, #13141A);
   border-radius: 6px;
   /* This makes the bar rounded */
   outline: none;
@@ -33,17 +33,19 @@ body {
   appearance: none;
   width: 50px;
   height: 50px;
-  background: gray;
+  background: #787878;
   cursor: pointer;
-  border-radius: 4px;
+  border-radius: 10px;
+  border: 1px solid #ffffff;
+
   /* This makes the knob rounded */
 }
 
 .custom-slider::-moz-range-thumb {
   width: 50px;
   height: 50px;
-  background: gray;
+  background: #787878;
   cursor: pointer;
-  border-radius: 4px;
+  border-radius: 10px;
   /* This makes the knob rounded */
 }

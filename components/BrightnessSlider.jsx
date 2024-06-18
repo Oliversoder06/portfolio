@@ -5,7 +5,7 @@ import React from 'react';
 
 const BrightnessSlider = ({ onChange }) => {
     return (
-        <div className="absolute top-4 left-4 z-[100] flex items-center">
+        <div className="z-[100] flex items-center">
             <input
                 type="range"
                 min="0"

@@ -12,14 +12,16 @@ const Header = () => {
     };
 
     return (
-        <>
-            <BrightnessSlider onChange={handleBrightnessChange} />
-            {/* <Navbar /> */}
-            <div
-                className="absolute inset-0 z-0"
-                style={{ backgroundColor: '#121212', filter: `brightness(${brightness}%)` }}
-            ></div>
-        </>
+        <div className='flex justify-center'>
+            <div className='w-full flex justify-end max-w-[1440px]'>
+                <BrightnessSlider onChange={handleBrightnessChange} />
+                <div
+                    className="absolute inset-0 z-0"
+                    style={{ backgroundColor: '#121212', filter: `brightness(${brightness}%)` }}
+                ></div >
+                <Navbar />
+            </div >
+        </div>
     );
 };
 
