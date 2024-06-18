@@ -11,7 +11,7 @@ const BrightnessSlider = ({ onChange }) => {
                 min="0"
                 max="100"
                 defaultValue="0"
-                className="custom-slider w-48rem"
+                className="custom-slider"
                 onChange={(e) => onChange(parseInt(e.target.value))}
             />
         </div>
