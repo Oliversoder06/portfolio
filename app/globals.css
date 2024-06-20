@@ -8,6 +8,7 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   background-color: #121212;
   color: #ffffff;
+  cursor: none;
 }
 
 /* Slider Container */
@@ -38,6 +39,7 @@ body {
   cursor: pointer;
   border-radius: 10px;
   border: 1px solid #ffffff;
+  cursor: none;
   /* This makes the knob rounded */
 }
 
@@ -53,18 +55,17 @@ body {
 .flare {
   position: fixed;
   border-radius: 50%;
-  mix-blend-mode: screen;
   pointer-events: none;
   transform: translate(-50%, -50%);
   z-index: 999999 !important;
-  background-color: #fff;
-  backdrop-filter: blur(100%);
-  transition: width 0.2s ease-in-out, height 0.2s ease-in-out;
+  background-color: rgba(255, 255, 255, 1);
+  /* Semi-transparent white color */
+  box-shadow: 0 0 40px 40px rgba(255, 255, 255, 0.5);
+  /* Blurry effect */
+  transition: width 0.2s ease-in-out, height 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
   cursor: none !important;
-  /* Let's hide the default cursor so it looks way better */
 }
 
-/* We need to remove this custom cursor in mobile devices */
 @media screen and (max-width: 768px) {
   .flare {
     width: 0;
@@ -76,5 +77,22 @@ body {
 
 .flare.pointer {
   opacity: 0 !important;
-  transition: width 0.2s ease-in-out, height 0.2s ease-in-out, opacity 0.2s ease-in-out;
+  transition: width 0.2s ease-in-out, height 0.2s ease-in-out, opacity 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+
+.no-cursor {
+  cursor: none;
+}
+
+.background-layer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  /* Ensure it stays behind other content */
+  background: #121212;
+  /* Background color to adjust brightness */
 }
