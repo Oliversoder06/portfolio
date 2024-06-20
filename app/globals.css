@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 /* globals.css */
 body {
   margin: 0;
@@ -14,7 +13,7 @@ body {
 /* Slider Container */
 .custom-slider {
   appearance: none;
-  width: 620px;
+  width: 600px;
   height: 12px;
   background: linear-gradient(90deg, #5F5F5F 0%, #13141A);
   border-radius: 6px;
@@ -22,6 +21,8 @@ body {
   outline: none;
   opacity: 0.7;
   transition: opacity .2s;
+
+
 }
 
 .custom-slider:hover {
@@ -37,7 +38,6 @@ body {
   cursor: pointer;
   border-radius: 10px;
   border: 1px solid #ffffff;
-
   /* This makes the knob rounded */
 }
 
@@ -48,4 +48,33 @@ body {
   cursor: pointer;
   border-radius: 10px;
   /* This makes the knob rounded */
+}
+
+.flare {
+  position: fixed;
+  border-radius: 50%;
+  mix-blend-mode: screen;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  z-index: 999999 !important;
+  background-color: #fff;
+  backdrop-filter: blur(100%);
+  transition: width 0.2s ease-in-out, height 0.2s ease-in-out;
+  cursor: none !important;
+  /* Let's hide the default cursor so it looks way better */
+}
+
+/* We need to remove this custom cursor in mobile devices */
+@media screen and (max-width: 768px) {
+  .flare {
+    width: 0;
+    height: 0;
+    transition: width 0.2s ease-in-out, height 0.2s ease-in-out,
+      opacity 0.2s ease-in-out;
+  }
+}
+
+.flare.pointer {
+  opacity: 0 !important;
+  transition: width 0.2s ease-in-out, height 0.2s ease-in-out, opacity 0.2s ease-in-out;
 }

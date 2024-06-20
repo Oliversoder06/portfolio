@@ -1,7 +1,5 @@
 'use client';
-
 import Link from 'next/link';
-
 const Navbar = () => {
     return (
         <nav className="flex justify-between items-center p-4 w-[38rem] z-10 bg-[#13141A] rounded-[40px] px-16">
@@ -12,5 +10,4 @@ const Navbar = () => {
         </nav>
     );
 };
-
 export default Navbar;

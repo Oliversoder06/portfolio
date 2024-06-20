@@ -1,8 +1,5 @@
-// components/BrightnessSlider.jsx
 'use client';
-
 import React from 'react';
-
 const BrightnessSlider = ({ onChange }) => {
     return (
         <div className="z-[100] flex items-center">
@@ -17,5 +14,4 @@ const BrightnessSlider = ({ onChange }) => {
         </div>
     );
 };
-
 export default BrightnessSlider;

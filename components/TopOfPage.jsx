@@ -6,25 +6,23 @@ const icons = [FaHtml5, FaCss3, FaJs, FaReact, FaNodeJs];
 
 const TopOfPage = () => {
     return (
-        <section id="home" className="relative h-screen flex flex-col justify-center items-center text-center">
-            <h1 className="text-5xl font-bold text-white">
-                OLIVER SÖDERLUND<br />
-                <span className="text-4xl">I'm a Web</span><br />
-                <span className="text-teal-500 text-6xl">Developer</span>
-            </h1>
-            {/* <div className="absolute inset-0">
-                {icons.map((Icon, index) => (
-                    <motion.div
-                        key={index}
-                        initial={{ y: -50, opacity: 0 }}
-                        animate={{ y: 50, opacity: 1 }}
-                        transition={{ duration: 1, repeat: Infinity, repeatType: "reverse" }}
-                        className="absolute"
-                    >
-                        <Icon size={50} className="text-white opacity-25" />
-                    </motion.div>
-                ))}
-            </div> */}
+        <section id="home" className="relative h-screen flex w-full justify-center items-center">
+
+            <div className='w-[50%] h-full flex justify-center items-center gap-16'>
+                <div className='w-[3px] h-[177px] bg-[#D9D9D9]' />
+                <div>
+                    <h1 className="text-5xl text-[#C5C6C7]">
+                        OLIVER SÖDERLUND<br />
+                    </h1>
+                    <h2 className="text-8xl text-[#fff] leading-[0.9]">
+                        I'm a Web <br /><span className='text-[#66FCF1]'>Developer</span>
+                    </h2>
+                </div>
+            </div>
+
+            <div className='bg-gray-900 w-[50%] h-full opacity-30'>
+
+            </div>
         </section>
     );
 };
