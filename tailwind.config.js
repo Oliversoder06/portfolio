@@ -5,7 +5,16 @@ module.exports = {
     './components/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'theme-blue': '#66FCF1',
+      },
+      fontFamily: {
+        'Aldrich': ['Aldrich', 'sans-serif'],
+        'Monda': ['Monda', 'sans-serif'],
+        'Chathura': ['Chathura', 'sans-serif'],
+      },
+    },
     screens: {
       'xs': '400px',
       'sm': '640px',

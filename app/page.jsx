@@ -5,6 +5,7 @@ import TopOfPage from '../components/TopOfPage';
 import LoadingScreen from '../components/LoadingScreen';
 import FlareCursor from '@/components/FlareCursor';
 import './css/cursor.css';
+import About from '@/components/About';
 
 const BrightnessSlider = ({ onChange }) => {
   return (
@@ -44,9 +45,10 @@ export default function Home() {
           className="background-layer"
           style={{ filter: `brightness(${brightness}%)` }}
         ></div>
-        <div className="relative z-10 pt-[64px]"> {/* Adjust padding to prevent content from going under the fixed header */}
+        <div className="relative z-10 pt-[64px]">
           <TopOfPage />
         </div>
+        <About />
       </div>
     </div>
   );

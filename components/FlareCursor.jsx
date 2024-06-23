@@ -9,7 +9,7 @@ function FlareCursor() {
 
         const target = e.target;
         if (target.classList.contains("HoverCursor")) {
-            setGlowSize(20); // Large glow size for flashlight effect
+            setGlowSize(40); // Larger glow size for flashlight effect
         } else {
             setGlowSize(20); // Default glow size
         }
