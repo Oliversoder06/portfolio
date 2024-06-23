@@ -1,0 +1,27 @@
+.rain {
+    width: 50%;
+    height: 100%;
+    z-index: 1000;
+    pointer-events: none;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+@keyframes rain {
+    0% {
+        transform: translateY(-100%);
+    }
+
+    100% {
+        transform: translateY(100vh);
+    }
+}
+
+.icon-overlay {
+    position: absolute;
+    top: -50px;
+    /* Start above the view */
+    animation: rain linear infinite;
+}

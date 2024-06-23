@@ -2,14 +2,17 @@ import React, { useState, useEffect } from "react";
 
 function FlareCursor() {
     const [position, setPosition] = useState({ x: 0, y: 0 });
-    const [isPointer, setIsPointer] = useState(false);
+    const [glowSize, setGlowSize] = useState(20);
 
     const handleMouseMove = (e) => {
         setPosition({ x: e.clientX, y: e.clientY });
+
         const target = e.target;
-        setIsPointer(
-            window.getComputedStyle(target).getPropertyValue("cursor") === "pointer"
-        );
+        if (target.classList.contains("HoverCursor")) {
+            setGlowSize(20); // Large glow size for flashlight effect
+        } else {
+            setGlowSize(20); // Default glow size
+        }
     };
 
     useEffect(() => {
@@ -19,18 +22,15 @@ function FlareCursor() {
         };
     }, []);
 
-    const flareSize = isPointer ? 20 : 5;  // Increased size for clickable elements
-    const cursorStyle = isPointer ? { left: "-100px", top: "-100px" } : {};
-
     return (
         <div
-            className={`flare ${isPointer ? "pointer" : ""}`}
+            className="flare"
             style={{
-                ...cursorStyle,
                 left: `${position.x}px`,
                 top: `${position.y}px`,
-                width: `${flareSize}px`,
-                height: `${flareSize}px`,
+                width: `5px`,
+                height: `5px`,
+                boxShadow: `0 0 ${glowSize}px ${glowSize}px rgba(255, 255, 255, 0.2)`
             }}
         ></div>
     );

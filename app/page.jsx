@@ -4,6 +4,7 @@ import Header from '../components/Header';
 import TopOfPage from '../components/TopOfPage';
 import LoadingScreen from '../components/LoadingScreen';
 import FlareCursor from '@/components/FlareCursor';
+import './css/cursor.css';
 
 const BrightnessSlider = ({ onChange }) => {
   return (

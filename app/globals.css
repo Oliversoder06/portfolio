@@ -22,8 +22,6 @@ body {
   outline: none;
   opacity: 0.7;
   transition: opacity .2s;
-
-
 }
 
 .custom-slider:hover {
@@ -52,38 +50,7 @@ body {
   /* This makes the knob rounded */
 }
 
-.flare {
-  position: fixed;
-  border-radius: 50%;
-  pointer-events: none;
-  transform: translate(-50%, -50%);
-  z-index: 999999 !important;
-  background-color: rgba(255, 255, 255, 1);
-  /* Semi-transparent white color */
-  box-shadow: 0 0 40px 40px rgba(255, 255, 255, 0.5);
-  /* Blurry effect */
-  transition: width 0.2s ease-in-out, height 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-  cursor: none !important;
-}
 
-@media screen and (max-width: 768px) {
-  .flare {
-    width: 0;
-    height: 0;
-    transition: width 0.2s ease-in-out, height 0.2s ease-in-out,
-      opacity 0.2s ease-in-out;
-  }
-}
-
-.flare.pointer {
-  opacity: 0 !important;
-  transition: width 0.2s ease-in-out, height 0.2s ease-in-out, opacity 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-}
-
-
-.no-cursor {
-  cursor: none;
-}
 
 .background-layer {
   position: fixed;
@@ -95,4 +62,12 @@ body {
   /* Ensure it stays behind other content */
   background: #121212;
   /* Background color to adjust brightness */
+}
+
+
+
+@media screen and (max-width: 1280px) {
+  .custom-slider {
+    width: 480px;
+  }
 }
