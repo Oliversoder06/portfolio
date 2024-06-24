@@ -16,10 +16,10 @@ module.exports = {
       },
     },
     screens: {
-      'xs': '400px',
+      'xs': '425px',
       'sm': '640px',
       'md': '768px',
-      'md2': '930px',
+      'md2': '960px',
       'lg': '1024px',
       'lg2': '1120px',
       'xl': '1280px',

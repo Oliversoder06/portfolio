@@ -77,3 +77,15 @@ body {
     width: 480px;
   }
 }
+
+@media screen and (max-width: 960px) {
+  .custom-slider {
+    width: 320px;
+  }
+}
+
+@media screen and (max-width: 639px) {
+  .custom-slider {
+    display: none;
+  }
+}

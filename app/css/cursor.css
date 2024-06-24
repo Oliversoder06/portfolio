@@ -50,3 +50,9 @@
 .no-cursor {
     cursor: none;
 }
+
+@media screen and (max-width: 425px) {
+    .flare {
+        display: none;
+    }
+}

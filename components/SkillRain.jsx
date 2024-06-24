@@ -8,7 +8,7 @@ const SkillRain = () => {
     const skillEntries = useMemo(() => {
         return Object.entries(Skills).map(([skill, src]) => {
             const getRandomInt = (min, max) => Math.floor(Math.random() * (max - min)) + min;
-            const delay = getRandomInt(0, 20000) / 500; // Random delay between 0 to 15 seconds
+            const delay = getRandomInt(0, 5000) / 500; // Random delay between 0 to 15 seconds
             const left = getRandomInt(0, 100); // Random horizontal position between 0% to 100%
 
             return { skill, src, delay, left };
