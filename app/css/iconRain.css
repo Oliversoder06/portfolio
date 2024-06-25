@@ -28,7 +28,7 @@
     position: absolute;
     top: -50px;
     animation: rain linear infinite;
-    filter: brightness(0.6);
+    filter: brightness(1);
 }
 
 /* Add animation properties for the .icon-overlay class */
