@@ -36,7 +36,7 @@ export default function Home() {
   };
 
   return (
-    <div className='no-cursor'>
+    <div>
       <FlareCursor />
       {loading && <LoadingScreen />}
       <div className={`min-h-screen ${loading ? 'overflow-hidden' : ''}`}>

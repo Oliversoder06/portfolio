@@ -2,6 +2,8 @@
 import Image from 'next/image';
 import Link from 'next/link';
 const Navbar = () => {
+
+
     return (
         <div>
             <nav className="sm:flex hidden justify-between items-center p-4 w-[20rem] md2:w-[30rem] xl:w-[38rem] z-10 bg-[#13141A] rounded-[40px] px-8 md2:px-16 no-cursor font-Chathura gap-5">

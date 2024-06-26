@@ -55,4 +55,8 @@
     .flare {
         display: none;
     }
+
+    body {
+        cursor: auto !important;
+    }
 }
