@@ -10,22 +10,21 @@ const About = () => {
                     <div className="bg-white h-auto py-10 px-10 mx-20 flex flex-col gap-16 bg-opacity-[0.01] rounded-sm">
                         <div className='flex flex-col gap-10 '>
                             <div>
-                                <h3 className='text-theme-blue text-2xl lg2:text-3xl'>Header 1</h3>
+                                <h3 className='text-theme-blue text-2xl lg2:text-3xl'>Who am I?</h3>
                                 <p className='text-white text lg2:text-xl pt-5'>
-                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius labore unde deleniti corporis aperiam nesciunt, inventore accusantium eum iure odit, rerum ipsam nihil asperiores ex ipsum, odio maiores perferendis tenetur.
+                                    Hi there! I'm Oliver, a passionate and dedicated front-end web developer.I'm always striving to push the boundaries of what's possible. My journey has been shaped by my curiosity and a relentless drive to learn and grow, allowing me to tackle challenges head-on and deliver exceptional results.
                                 </p>
                             </div>
                             <div>
-                                <h3 className='text-theme-blue text-2xl lg2:text-3xl'>Header 2</h3>
+                                <h3 className='text-theme-blue text-2xl lg2:text-3xl'>What's my goal?</h3>
                                 <p className='text-white lg2:text-xl pt-5'>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Non quasi tenetur odit earum magni maxime sapiente, inventore explicabo eveniet. Asperiores ullam reiciendis quaerat! Officiis, tempora dolores exercitationem rerum eos cumque.
-                                    Ab delectus dicta perspiciatis rem eos officiis esse accusamus optio! Vitae similique id fugit perferendis ad, unde rerum reiciendis nam animi alias et necessitatibus voluptatem eaque assumenda maxime modi! Ut.
+                                    My goal is to make a meaningful impact through my work, leveraging my skills to create solutions that not only meet but exceed expectations. I aim to continuously evolve and adapt, staying at the forefront of industry trends and technologies. Whether it's [Your Specific Area of Focus], my mission is to blend creativity and technical prowess to bring innovative ideas to life, enhancing experiences and driving success for my clients and collaborators.
                                 </p>
                             </div>
                             <div>
-                                <h3 className='text-theme-blue text-2xl lg2:text-3xl'>Header 3</h3>
+                                <h3 className='text-theme-blue text-2xl lg2:text-3xl'>Why choose me?</h3>
                                 <p className='text-white lg2:text-xl pt-5'>
-                                    This is the third card
+                                    Choosing me means partnering with someone who is not only skilled and experienced but also deeply committed to your success. I bring a unique blend of creativity, technical expertise, and a proactive approach to every project. My attention to detail, dedication, and passion for excellence ensure that I deliver high-quality work that stands out. By working with me, you're choosing a collaborator who listens, understands, and works tirelessly to achieve your vision. Let's create something extraordinary together!
                                 </p>
                             </div>
                         </div>

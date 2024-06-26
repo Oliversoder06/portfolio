@@ -6,6 +6,7 @@ import LoadingScreen from '../components/LoadingScreen';
 import FlareCursor from '@/components/FlareCursor';
 import './css/cursor.css';
 import Hero from '@/components/Hero';
+import { Toaster } from 'react-hot-toast';
 
 const BrightnessSlider = ({ onChange }) => {
   return (
@@ -50,6 +51,7 @@ export default function Home() {
         </div>
         <Hero />
       </div>
+      <Toaster />
     </div>
   );
 }
