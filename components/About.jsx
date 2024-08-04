@@ -18,7 +18,7 @@ const About = () => {
                             <div>
                                 <h3 className='text-theme-blue text-2xl lg2:text-3xl'>What's my goal?</h3>
                                 <p className='text-white lg2:text-xl pt-5'>
-                                    My goal is to make a meaningful impact through my work, leveraging my skills to create solutions that not only meet but exceed expectations. I aim to continuously evolve and adapt, staying at the forefront of industry trends and technologies. Whether it's [Your Specific Area of Focus], my mission is to blend creativity and technical prowess to bring innovative ideas to life, enhancing experiences and driving success for my clients and collaborators.
+                                    My goal is to make a meaningful impact through my work, leveraging my skills to create solutions that not only meet but exceed expectations. I aim to continuously evolve and adapt, staying at the forefront of industry trends and technologies. My mission is to blend creativity and technical prowess to bring innovative ideas to life, enhancing experiences and driving success for my clients and collaborators.
                                 </p>
                             </div>
                             <div>

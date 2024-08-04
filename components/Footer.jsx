@@ -16,7 +16,7 @@ const Footer = () => {
                 {/* CONTACT FORM */}
                 <Contact />
                 {/* FOOTER */}
-                <footer className='w-full lg:w-[50%] h-[850px] bg-[#181818] px-10 sm:px-20 pt-32 pb-16 flex flex-col justify-between'>
+                <footer className='w-full lg:w-[50%] h-[850px] bg-[#181818] px-10 sm:px-20 pt-32 flex flex-col justify-between'>
                     <p className='font-Monda text-white opacity-90 text-xl 2xl:text-2xl leading-[1.5] mb-10 text-center'>If you like what you're seeing, you can reach out to me through email, instagram dm's, or just through this website.</p>
                     <div className='w-full flex justify-center lg:hidden'>
                         <div className='w-[90%] h-[1px] bg-white' />
@@ -44,9 +44,10 @@ const Footer = () => {
                             </div>
                         </div>
                     </div>
-                    <div className='flex w-full justify-center'>
+                    <div className='flex w-full justify-center flex-col gap-5'>
                         <p className='text-xl xl:text-2xl font-Monda text-white text-center'>©2024 Oliver’s Portfolio, All right reserved.</p>
                     </div>
+                    <p className='text-xl xl:text-[16px] font-Monda text-gray-400 text-center text-nowrap'>Powered by <Link className='text-theme-blue cursor-none HoverCursor opacity-85 hover:opacity-100' href="https://www.swedishservers.com" target='_blank'>Swedish Servers</Link></p>
                 </footer>
             </div >
         </div >
