@@ -8,7 +8,7 @@ const Hero = () => {
         <>
 
             <About />
-            {/* <Projects /> */}
+            <Projects />
             <Footer />
         </>
     )

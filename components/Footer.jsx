@@ -8,7 +8,7 @@ import Contact from './Contact'
 
 const Footer = () => {
     return (
-        <div className='w-full mt-64'>
+        <div id='contact' className='w-full mt-64'>
             <h1 className="text-white font-Monda text-5xl lg2:text-6xl text-center my-20">Let's work <span className='text-theme-blue'>Together</span></h1>
 
             {/* ALL CONTENT */}
