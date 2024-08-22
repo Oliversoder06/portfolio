@@ -11,19 +11,19 @@ const Projects = () => {
                     <Project
                         image='/images/NexTalk.png'
                         label={'NexTalk'}
-                        color={'#FFF'}
+                        color={'#ffffff'}
                     />
                     <Project
                         image='/images/WaisGPT.png'
                         label={'WaisGPT'}
-                        color={'#FFF'}
+                        color={'#ffffff'}
                     />
                 </div>
                 <div className='flex xl:flex-row flex-col gap-7'>
                     <Project
                         image='/images/SmileySpeak.png'
                         label={'SmileySpeak'}
-                        color={'#000'}
+                        color={"#141414"}
                     />
                     {/* <Project /> */}
                 </div>
