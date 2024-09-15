@@ -55,7 +55,7 @@ const Contact = () => {
 
     return (
         <form onSubmit={sendEmail} ref={formRef} className='w-full lg:w-[50%] h-[850px] flex flex-col gap-20 font-Monda items-center justify-center'>
-            <Input placeholder='Enter your firstname' name="firstname" label='Full Name' type='text' />
+            <Input placeholder='Enter your full name' name="firstname" label='Full Name' type='text' />
             <Input placeholder='Enter your email address' name="email" label='Email' type='email' />
             <div className='flex flex-col gap-2'>
                 <label htmlFor="message" className='text-white font-Monda text-xl xs:text-2xl md:cursor-none md:HoverCursor ml-2'>Message</label>
