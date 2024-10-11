@@ -11,7 +11,7 @@ const TopOfPage = () => {
                     <div className='w-[3px] h-[140px] lg2:h-[177px] bg-[#D9D9D9]' />
                     <div>
                         <h1 className="text-3xl lg2:text-5xl text-[#C5C6C7]">
-                            OLIVER SÖDERLUND
+                            OLIVER SÖDERLUND!
                         </h1>
                         <h2 className="text-7xl lg2:text-8xl text-[#fff] lg2:leading-[0.9]">
                             I'm a Web <br /><span className='text-theme-blue'>Developer</span>
