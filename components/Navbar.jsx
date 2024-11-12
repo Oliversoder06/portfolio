@@ -30,6 +30,7 @@ const Navbar = () => {
                             width={40}
                             height={40}
                             className='cursor-pointer absolute top-4 right-4'
+                            alt='close hamburger menu'
                         />
                         <nav className='flex flex-col justify-center items-center gap-5 p-4 w-full text-center'>
                             <Link href="#home" className='text-theme-blue text-3xl md2:text-4xl xl:text-5xl no-cursor HoverCursor'>HOME</Link>
@@ -40,7 +41,7 @@ const Navbar = () => {
                     </div>
                 ) : (
                     <div className='bg-black w-full h-full'>
-                        <Image onClick={handleOpen} src='/icons/burger-menu.svg' width={40} height={40} className='cursor-pointer' />
+                        <Image onClick={handleOpen} src='/icons/burger-menu.svg' width={40} height={40} className='cursor-pointer' alt='hamburger menu' />
                     </div>
                 )}
             </nav>
